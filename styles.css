@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #32f41086;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    font-family: 'Edu Australia VIC WA NT Hand Guides', sans-serif; /* Nova fonte para o título */
+    color: #3498db; /* Cor opcional */
+    text-align: center; /* Centraliza o título */
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #34d118;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-event {
+    padding: 10px;
+    background-color: rgb(65, 250, 133);
+    border-radius: 6px;
+    width: 45%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.timeline-event-left {
+    left: 0;
+}
+
+.timeline-event-right {
+    left: 50%;
+}
+
+.timeline-event-left::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+
+.timeline-event-right::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+.date {
+    font-weight: bold;
+}
